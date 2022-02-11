@@ -8,6 +8,7 @@ formEl.addEventListener("submit", (event) => {
 
     if (email.value === "" || password.value === "") {
         alert('Please fill in all fields!');
+        return;
     }
 
     console.log(`Email: ${email.value}, Password: ${password.value}`);
